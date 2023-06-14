@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Lê Đức Thuận - Yuki Kiriha</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" type="image/png" href="images/logo.jpg" />
+	<style>
+		body {
+			display: grid;
+			font-family: "Segoe UI", sans-serif;
+			grid-template-columns: repeat(12, 1fr);
+			grid-auto-rows: minmax(auto, auto);
+			color: #3e3e3e;
+			text-shadow: 0.4px 0.4px 0.4px rgba(0, 0, 0, .2);
+		}
+
+		h1 {
+			font-weight: lighter;
+			grid-column: span 3;
+			text-align: center;
+			color: #ec407a;
+		}
+
+		#wrapper {
+			display: grid;
+			grid-column: 3 / 11;
+			grid-template-columns: repeat(3, 1fr);
+			grid-auto-rows: minmax(auto, auto);
+			grid-row-gap: 10px;
+			margin-top: 3.6rem;
+		}
+
+		#current-time {
+			font-size: 18px;
+			font-weight: lighter;
+			grid-column: span 3;
+			text-align: center;
+			color: #ec407a;
+		}
+
+	
+
+		date,
+		time {
+			display: block;
+		}
+
+		date {
+			font-size: 18px;
+			font-weight: lighter;
+			grid-column: span 3;
+			text-align: center;
+			color: #ec407a;
+		}
+
+		time {
+			font-size: 18px;
+			font-weight: lighter;
+			grid-column: span 3;
+			text-align: center;
+			color: #ec407a;
+		}
+
+		
+
+		.avt {
+			width: 160px;
+			height: 160px;
+			border-radius: 50%;
+			box-shadow: 2px 2px 8px rgba(0, 0, 0, .2);
+		}
+
+		#info {
+			margin-top: 2.6rem;
+		}
+
+		#current-time {
+			font-size: 18px;
+			font-weight: lighter;
+			grid-column: span 3;
+			text-align: center;
+			color: #ec407a;
+		}
+
+		#heart {
+			grid-column: span 2;
+			display: grid;
+			grid-template-rows: 2;
+			font-size: 44px;
+			color: #ec407a;
+			align-self: center;
+			padding-bottom: 2.6rem;
+			text-align: center;
+		}
+
+		anni {
+			font-size: 16px;
+			letter-spacing: 0.2px;
+		}
+
+		#info .one {
+			grid-column: 3 / 6;
+			text-align: center;
+		}
+
+		#info .two {
+			grid-column: 8 / 11;
+			text-align: center;
+		}
+
+		footer {
+			grid-column: span 3;
+			text-align: center;
+			font-size: 1.6rem;
+			font-weight: lighter;
+			margin-top: 1.2rem;
+		}
+
+		#music {
+			grid-column: 2;
+			position: relative;
+			z-index: 1000;
+			opacity: .4;
+			text-align: center;
+		}
+
+		
+
+		@media (max-width: 992px) {
+			#wrapper {
+				grid-column: span 12;
+			}
+
+			#clock-box #clock {
+				grid-column: 2 / 12;
+			}
+
+			.avt {
+				width: 120px;
+				height: 120px;
+			}
+
+			#info .one,
+			#info .two {
+				grid-column: span 12;
+				;
+			}
+
+			#heart {
+				grid-column: span 12;
+				padding-bottom: 1rem;
+			}
+
+			footer {
+				font-size: 1.2rem;
+				margin: 0;
+				padding-bottom: 2rem;
+			}
+		}
+	</style>
+</head>
+
+<body class="single is-preload">
+
+	
+	<div id="wrapper">
+
+	
+		<header id="header">
+			<h1><a href="index.html">Reine OwO!~</a></h1>
+			<nav class="links">
+				<ul>
+					<li><a href="#">API Hololive (Comming Soon)</a></li>
+					
+				</ul>
+			</nav>
+			<nav class="main">
+				<ul>
+					<li class="search">
+						<a class="fa-search" href="#search">Search</a>
+						<form id="search" method="get" action="#">
+							<input type="text" name="query" placeholder="Tìm kiếm (Chưa hoạt động!)" />
+						</form>
+					</li>
+					<li class="menu">
+						<a class="fa-bars" href="#menu">Menu</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+	
+		<section id="menu">
+
+		
+			<section>
+				<form class="search" method="get" action="#">
+					<input type="text" name="query" placeholder="Search" />
+				</form>
+			</section>
+
+			
+			<section>
+				<ul class="links">
+					<li>
+						<a href="01.html">
+							<h3>Lê Đức Thuận - Yuki Kiriha</h3>
+							<p>Thông tin cá nhân, cách để có thể liên lạc với tớ và đôi lời tớ muốn chia sẻ:3</p>
+						</a>
+					</li>
+					<li>
+						<a href="02.html">
+							<h3>Đếm ngày iu nhau UwU!~</h3>
+							<p>Một site nhỏ để giúp tớ đếm ngày bên cạnh người ấy (Người ấy là ai thì chưa biết) UwU!~
+							</p>
+						</a>
+					</li>
+					
+				</ul>
+			</section>
+
+		
+		</section>
+
+		
+		<div id="main">
+
+			<article class="post">
+				<header>
+					<div class="title">
+						<h2><a href="#">Đếm ngày iu nhau UwU!~</a></h2>
+						<p>Một site nhỏ để giúp tớ đếm ngày bên cạnh người ấy (Người ấy là ai thì chưa biết) UwU!~</p>
+					</div>
+					<div class="meta">
+						<time class="published" datetime="2023-06-14">June 14, 2023</time>
+						<a href="#" class="author"><span class="name">Yuki Kiriha</span><img src="images/avatar.jpg"
+								alt="" /></a>
+					</div>
+				</header>
+				<div id="wrapper">
+					<h1>ĐÃ BÊN NHAU ĐƯỢC</h1>
+
+					<div id="clock-box">
+						<div id="clock">
+							<date> DAYS</date>
+							<div id="current-time"></div>
+						</div>
+
+					</div>
+
+					<div id="info">
+						<div class="one">
+							<img src="images/main.jpg" class="avt">
+							<p>Yuu</p>
+						</div>
+						<div id="heart">
+							❤<anni>...</anni>
+						</div>
+						<div class="two">
+							<img src="images/main2.jpg" class="avt">
+							<p>????
+
+							</p>
+						</div>
+					</div>
+
+					<div id="music">
+						<audio loop autoplay controls>Your browser does not support the audio element.</audio>
+					</div>
+					<footer>Hiii, luv u so much 💕</footer>
+				</div>
+
+				<span class="image featured"><img src="images/02.jpg" alt="" /></span>
+				<footer>
+					
+				</footer>
+			</article>
+
+		</div>
+
+
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="https://twitter.com/YukiKiriha" class="icon brands fa-twitter"><span
+							class="label">Twitter</span></a></li>
+				<li><a href="https://www.facebook.com/kiriha.yukii/" class="icon brands fa-facebook-f"><span
+							class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/yukikiriha/" class="icon brands fa-instagram"><span
+							class="label">Instagram</span></a></li>
+				<li><a href="https://github.com/YuukiCute/" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
+				<li><a href="https://www.tiktok.com/@yuusocuti" class="icon brands fa-tiktok"><span
+							class="label">Tiktok</span></a></li>
+			</ul>
+			<p class="copyright">&copy; Untitled. Design: <a href="https://www.facebook.com/kiriha.yukii/">Yuki
+					Kiriha</a>. Images: <a href="https://www.pinterest.com/">Pinterest</a>.</p>
+		</section>
+
+	</div>
+
+	
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		const t = Date.parse(new Date()) - Date.parse("2020-03-07T18:28:00");
+		const seconds = Math.floor((t / 1000) % 60);
+		const minutes = Math.floor((t / 1000 / 60) % 60);
+		const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+		const days = Math.floor(t / (1000 * 60 * 60 * 24));
+		const yourDate = Date.parse(new Date()) - Date.parse("2020-03-07T18:28:00"),
+			music = ['tinhyeumauhong', 'anhtheday', 'anhsedonem', 'yeutrongnangmai', 'emkhacgihoa', 'nucuoiem', 'tinhca', 'anhdalacvao', 'emlahoanghon'];
+
+		document.addEventListener('DOMContentLoaded', function () {
+
+
+
+			document.querySelector("anni").textContent = "07/03/2020";
+			document.querySelector("date").textContent = days + " NGÀY";
+			function bruh() {
+				const t = Date.parse(new Date()) - Date.parse("2020-03-07T18:28:00");
+				const seconds = Math.floor((t / 1000) % 60);
+				const minutes = Math.floor((t / 1000 / 60) % 60);
+				const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+				const days = Math.floor(t / (1000 * 60 * 60 * 24));
+				document.getElementById('current-time').textContent = hours + " GIỜ " + minutes + " PHÚT " + seconds + " GIÂY";
+			}
+			var ccdcm = setInterval(function () { bruh() }, 1000)
+
+			document.querySelector("audio").setAttribute("src", `/beenlove/music/${music[Math.floor(Math.random() * music.length)]}.mp3`);
+
+			document.getElementsByTagName("body")[0].insertAdjacentHTML(
+				"beforeend",
+				"<div id='mask'></div>"
+			);
+
+		}, false);
+
+	</script>
+
+</body>
+
+</html>
