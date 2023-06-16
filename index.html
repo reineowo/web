@@ -158,9 +158,9 @@
 					</div>
 				</header>
 				<a href="/03.html" class="image featured"><img src="images/03.jpg" alt="" /></a>
-
-				<div id="textuwu"></div>
 				<div id="time03"></div>
+				<div id="textuwu"></div>
+				
 				</p>
 
 
@@ -302,6 +302,7 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script>
+		function rantextuwu() {
 		var quote = [
 			"Tri thức là sức mạnh. F.Bacon",
 			"Cần phải lựa chọn một cách nghiêm ngặt xem nên học gì và không nên học gì. [Lev Tolstoy]",
@@ -400,6 +401,7 @@
 		var randomNumber = Math.floor(Math.random() * (quote.length));
 		var text = quote[randomNumber];
 		document.getElementById('textuwu').textContent = text;
+	}
 		function timer03() {
 			const t = Date.parse("2023-06-28T07:00:00") - Date.parse(new Date());
 			const seconds = Math.floor((t / 1000) % 60);
@@ -409,6 +411,7 @@
 			document.getElementById('time03').textContent = "Còn lại: " + days + " Ngày " + hours + " Giờ " + minutes + " Phút " + seconds + " Giây!";
 		}
 		var timer003 = setInterval(function () { timer03() }, 1000);
+		var rantextowo = setInterval(function () { rantextuwu() }, 5000);
 	</script>
 
 </body>
