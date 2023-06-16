@@ -2,14 +2,23 @@
 <html>
 
 <head>
-	<title>Been Love Memory</title>
+	<title>Lê Đức Thuận - Yuki Kiriha</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="shortcut icon" type="image/png" href="images/logo.jpg" />
 	<style>
-		
+		/* body {
+			display: grid;
+			width: device-width;
+			font-family: "Segoe UI", sans-serif;
+			grid-template-columns: repeat(12, 1fr);
+			grid-auto-rows: minmax(auto, auto);
+			color: #3e3e3e;
+			text-shadow: 0.4px 0.4px 0.4px rgba(0, 0, 0, .2);
+		} */
 
 		h1 {
 			font-weight: lighter;
@@ -267,7 +276,7 @@
 					<footer>Hiii, luv u so much 💕</footer>
 				</div>
 
-				<span class="image featured"><img src="images/02.jpg" alt="" /></span>
+				<span class="image featured"><img src="images/02.jpg" style="width:100%;" alt="" /></span>
 				<footer>
 					
 				</footer>
@@ -326,7 +335,7 @@
 			}
 			var ccdcm = setInterval(function () { bruh() }, 1000)
 
-			document.querySelector("audio").setAttribute("src", `/music/${music[Math.floor(Math.random() * music.length)]}.mp3`);
+			document.querySelector("audio").setAttribute("src", `/beenlove/music/${music[Math.floor(Math.random() * music.length)]}.mp3`);
 
 			document.getElementsByTagName("body")[0].insertAdjacentHTML(
 				"beforeend",
