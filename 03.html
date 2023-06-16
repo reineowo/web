@@ -145,6 +145,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
             <script>
+                function textuwu() {
                 var quote = [
                     "Tri thức là sức mạnh. F.Bacon",
                     "Cần phải lựa chọn một cách nghiêm ngặt xem nên học gì và không nên học gì. [Lev Tolstoy]",
@@ -243,15 +244,18 @@
                 var randomNumber = Math.floor(Math.random() * (quote.length));
                 var text = quote[randomNumber];
                 document.getElementById('textuwu').textContent = text;
+                }
                 function timer03() {
                     const t = Date.parse("2023-06-28T07:00:00") - Date.parse(new Date());
                     const seconds = Math.floor((t / 1000) % 60);
                     const minutes = Math.floor((t / 1000 / 60) % 60);
                     const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
                     const days = Math.floor(t / (1000 * 60 * 60 * 24));
-                    document.getElementById('time03').textContent = "Còn lại: " + days + " Ngày " + hours + " Giờ " + minutes + " Phút " + seconds + " Giây!";
+                    document.getElementById('time03').textContent = "Còn lại: " + days + " Ngày " + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
                 }
+                document.getElementById('textuwu').textContent = "Chúc các sĩ tử mùa thi may mắn, thành công và tốt đẹp. Chúc các cậu thi đậu 100% trong kì thi tốt nghiệp. Hãy ăn đủ bữa, ngủ đủ giấc mới có sức để ôn thi nhé cậu:3. Học ngày, học đêm, học quên cả ngủ. Chúc cậu thi tốt, sớm mang giấy báo về nha.";
                 var timer003 = setInterval(function () { timer03() }, 1000);
+                var textowo = setInterval(function () { textuwu() }, 8000);
 
                 document.querySelector("audio").setAttribute("src", `/music/thpt.mp3`);
             </script>
