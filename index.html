@@ -301,118 +301,287 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script>
-		function rantextuwu() {
-		var quote = [
-			"Tri thức là sức mạnh. F.Bacon",
-			"Cần phải lựa chọn một cách nghiêm ngặt xem nên học gì và không nên học gì. [Lev Tolstoy]",
-			"Đọc sách không bằng suy ngẫm, Học trường không hơn được trường đời. [Immanuel Kant]",
-			"Nghị lực và bền bỉ có thể giúp bạn chinh phục mọi thứ",
-			"Cuộc đời sẽ tươi đẹp hơn rất nhiều nếu ta có những tình bạn đúng nghĩa, luôn hết mình vì người khác.",
-			"Một chữ cũng là thầy, nửa chữ cũng là thầy [Tục ngữ Việt Nam]",
-			"Vấp ngã không phải là thất bại, chỉ là dừng lại cho đỡ mỏi chân thôi!",
-			"Giáo dục là làm cho con người tìm thấy chính mình . [Socrates]",
-			"Ước mơ không có ngày hết hạn, hãy hít thở sâu và cố gắng thêm lần nữa.",
-			"Cuộc sống rất ngắn. Đừng lẵng phí nó bởi những nỗi buồn. Hãy là chính mình, luôn vui vẻ, tự do, và trở thành bất cứ gì bạn muốn.",
-			"Học, học nữa, học mãi. [V.I. Lenin]",
-			"Phía sau tôi không có lấy một người, sao tôi dám ngã xuống.",
-			"Trường học có thể hô biến những người thắng và người bại, nhưng cuộc sống thì không. [Bill Gate]",
-			"Muốn xây dựng đất nước, trước hết phải phát triển giáo dục. Muốn trị nước, phải trọng dụng người tài. [Chiếu Lập Học]",
-			"Thời gian còn lại rất ngắn. Hãy cố gắng hết sức mình, để không phải hối tiếc.",
-			"Con đường do bản thân lựa chọn, dù có quỳ cũng phải đi cho hết.",
-			"Thái độ bây giờ của bạn sẽ quyết định mười năm sau bạn là một nhân vật tầm cỡ hay chỉ là một kẻ thất bại.",
-			"Nếu như không có vận may, thì hãy thử dùng dũng khí.",
-			"Để có thể thành công, bạn cần phải tin rằng mình có thể.",
-			"Cách tốt nhất để làm mọi thứ là ngừng nói và làm ngay bây giờ.",
-			"Bạn chỉ thất bại khi bạn ngừng cố gắng.",
-			"Kẻ thù lớn nhất của tri thức không phải là sự thiếu hiểu biết mà là sự ảo tưởng về tri thức. - Stephen Hawking.",
-			"Bạn bắt đầu làm việc gì đó càng sớm thì càng sớm thấy được kết của quả của nó.",
-			"Nếu chúng ta cứ đợi cho đến khi bản thân sẵn sàng thì có lẽ chúng ta sẽ đợi đến hết cuộc đời.",
-			"Không bao giờ quá muộn để khiến mình trở thành phiên bản mà bản thân mong muốn.",
-			"Bạn không cần phải tuyệt vời ngay từ khi bắt đầu. Nhưng bạn phải bắt đầu trở nên tuyệt vời.",
-			"Không ai có thể quay ngược thời gian để bắt đầu lại từ đầu. Nhưng ai cũng có thể bắt đầu từ hôm này để tạo nên một cái kết mới. - Maria Robinson.",
-			"Một dòng sông có thể cắt ngang qua những khối đá không phải nhờ sức mạnh mà là nhờ sự bền bỉ.",
-			"Để thay đổi cuộc sống của mình, trước hết bạn phải thay đổi thói quen hàng ngày.",
-			"Người ta sẽ học được nhiều điều từ những sai lầm của bản thân nếu không cố gắng phủ nhận chúng. - Harold J.Smith.",
-			"Thiên tài chỉ có 1% là năng khiếu bẩm sinh, 99% còn lại là mồ hôi. Thiên tài chỉ đơn thuần là một người tài năng đã hoàn thành tất cả cá bài tập về nhà. - Thomas Edison.",
-			"Muốn có kiến thức, bạn phải học. Nhưng để có được sự khôn ngoan, người ta phải học cách quan sát. - Marilyn vos Savant.",
-			"Đọc càng nhiều, biết càng nhiều điều. Càng học được nhiều, bạn sẽ càng đi được nhiều nơi. - Dr. Seuss.",
-			"Mọi thành tựu đề bắt đầu từ quyết định cố gắng. - Gail Devers.",
-			"Sự trì hoãn sẽ khiến cho những điều dễ dàng trở nên khó khăn và những điều khó khăn trở nên khó khăn hơn. - Mason Cooley.",
-			"Hãy học tập chăm chỉ, dù điều đó dường như không thể, dù điều đó tốn nhiều thời gian hay khiến bạn phải thức cả đêm. Chỉ cần nhớ rằng cảm giác thành công là điều tuyệt vời nhất trên thế giới. - khangal_wehearit.",
-			"Chăm chỉ là điều quan trọng, nhưng có một điều còn quan trọng hơn, đó là tin tưởng vào chính mình. - Harry Potter.",
-			"Nếu bạn không theo đuổi những gì mình muốn, bạn sẽ không bao giờ có được nó. Nếu bạn không hỏi, câu trả lời sẽ luôn là không. Nếu bạn không tiến về phía trước, bạn sẽ mãi dậm chân tại chỗ. - Nora Roberts.",
-			"12 năm đèn sách, đừng để bản thân phải nuối tiếc.",
-			"Trên con đường thành công, sẽ không có ai vực bạn dậy, không có ai làm thay bạn. Bạn cần phải tự kỷ luật, tự học hỏi, tự trưởng thành, tự đột phá.",
-			"Bất luận bạn đang trải qua chuyện gì, xin đừng từ bỏ. Bởi vì sự kiên trì vĩnh viễn sẽ không khiến người ta thất vọng. Ai mà không từng trải qua khó khăn, chông gai.  Chỉ cần nỗ lực, bạn có thể trở thành một phiên bản độc nhất vô nhị..",
-			"Nếu bạn học hành chăm chỉ, bạn sẽ gặp được một bản thân tốt hơn.",
-			"Đừng đợi miếng bánh từ trên trời rơi xuống, cũng đừng mong ông trời bao dung với bạn. Chỉ có nỗ lực mới giúp chúng ta thấy được bầu trời cao rộng và trong xanh ở ngoài kia.",
-			"Học một chút còn hơn là không học, làm một chút còn hơn là không làm. Không phải mọi sự nỗ lực đều dẫn đến thành công, nhưng bạn sẽ không bao giờ thành công nếu không chăm chỉ.",
-			"Khi bạn trở nên tốt hơn thì mọi thứ xung quanh bạn cũng tốt hơn. Chăm chỉ học hành là một trong những cách có thể khiến cho bản thân trở thành một phiên bản tốt hơn.",
-			"Những người vượt qua kỳ thi sẽ không lang thang trên mạng vào thời điểm này. - mystudymotivations.",
-			"Nếu bạn đã làm hết khả năng thì bạn sẽ không có thời gian để lo lắng về sự thất bại. - mystudymotivations.",
-			"Khi bạn đang lãng phí thời gian thì những người khác đều đang nỗ lực.",
-			"Cha mẹ có thể hy sinh tất cả vì bạn. Khi mệt mỏi, hãy nghĩ đến họ và cố gắng nhiều hơn.",
-			"Khi bạn lười biếng, người khác đang chăm chỉ. Đến khi bạn nhận ra mình phải nỗ lực nhiều hơn thì người khác đều đang bận hưởng “trái ngọt” rồi.",
-			"Mọi người đều trở nên ưu tú, đừng để bản thân bị tụt lại phía sau.",
-			"Đừng dừng lại cho đến khi bạn cảm thấy tự hào về bản thân. - Khuyết danh.",
-			"Không gì có thể thay thế cho sự chăm chỉ. - Thomas Edison.",
-			"Trí tuệ…. không đến từ tuổi tác mà đến từ giáo dục và học tập. - Anton Chekhov.",
-			"Tương lai thuộc về những người chuẩn bị từ hôm nay.",
-			"Hãy giỏi đến mức không ai có thể phớt lờ bạn.",
-			"Khoảng cách giữa ước mơ và thực tế được gọi là hành động.",
-			"Hãy tìm cầu vồng khi trời mưa và tìm những vì sao khi trời tối.",
-			"Học từ quá khứ. Sống cho hiện tại. Hy vọng vào tương lai. - Albert Einstein.",
-			"Học trước, chơi sau. - Daniel D. Palmer.",
-			"Một ngày nào đó, mọi nỗ lực của bạn sẽ được đền đáp.",
-			"Tin vào bản thân có thể là bạn đã đi được nửa chặng đường.",
-			"Hãy tự thúc đẩy bản thân vì sẽ chẳng có ai làm điều đó cho bạn.",
-			"Cuộc sống luôn có hai quy tắc. Một là không bao giờ bỏ cuộc. Hai là luôn luôn ghi nhớ quy tắc số một.",
-			"Tri thức là sức mạnh.  - Kofi Annan.",
-			"Học vì bản thân, vì tương lai và vì cả những người yêu thương bạn vô điều kiện.",
-			"Sự trả thù tốt nhất là trở nên thành công.",
-			"Chỉ cần cố gắng thêm một chút, một chút nữa thôi, mọi nỗ lực của bạn sẽ được đền đáp.",
-			"Tương lai nằm trong tay, đừng khiến bản thân phải hối tiếc.",
-			"Bầu trời đẹp đẽ ấy, hãy cùng nhau ngắm nhìn.",
-			"Học là con đường giúp bạn thay đổi số phận.",
-			"Không trồng cây thì sẽ không có cơ hội được nằm dưới bóng râm và thưởng thức trái ngọt. Không học hành chăm chỉ, nỗ lực hết mình ngay từ hôm nay thì cơ hội chạm đến thành công, đạt được ước mơ của bạn sẽ ít hơn người khác.",
-			"Học không phải là con đường duy nhất dẫn đến thành công nhưng nó được xem là con đường ngắn nhất, vững chắc nhất. Ngay cả người thành công cũng phải học hỏi không ngừng.",
-			"Công thức để thành công là: Học khi người khác đang ngủ; làm việc khi người khác lười biếng; chuẩn bị khi người khác đang chơi; và ước mơ khi người khác mong muốn. - William A. Ward.",
-			"Bạn không cần phải trở thành học sinh hoàn hảo. Bạn chỉ cần nỗ lực hết mình.",
-			"Đừng nói rằng bạn không có đủ thời gian. Bạn có chính xác số giờ mà Helen Keller, Pasteur, Michelangelo, mẹ Teresa, Leonardo da Vinci, Thomas Jefferson và Albert Einstein có mỗi ngày. - H. Jackson Brown Jr.",
-			"Mỗi buổi sáng, bạn có hai lựa chọn: tiếp tục ngủ với những giấc mơ của mình hoặc thức dậy và biến chúng thành sự thật.  - Khuyết danh.",
-			"Bài học vĩ đại nhất mà tôi học được trong cuộc đời là tôi vẫn còn có rất nhiều điều phải học.",
-			"Bạn sẽ không bao giờ biết được bản thân có thể làm gì khi chưa cố gắng. - Robert Collier.",
-			"Không có bí quyết nào cho sự thành công. Nó là kết quả của sự chuẩn bị, làm việc chăm chỉ và học hỏi từ thất bại. - Colin Powell.",
-			"Thành công không tự đến với bạn, bạn phải đi tìm nó. - Marva Collins.",
-			"Tài năng “rẻ” hơn muối ăn. Điểm khác biệt giữa người tài năng và người thành công là làm việc chăm chỉ. -  Stephen King.",
-			"Chăm chỉ học tập trong im lặng rồi thành công sẽ lên tiếng.",
-			"Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young. - Henry Ford.",
-			"An investment in knowledge pays the best interest. - Benjamin Franklin",
-			"There is no end to education. It is not that you read a book, pass an examination, and finish with education. The whole of life, from the moment you are born to the moment you die, is a process of learning. - Jiddu Krishnamurti.",
-			"Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi.",
-			"Research shows that you begin learning in the womb and go right on learning until the moment you pass on. Your brain has a capacity for learning that is virtually limitless, which makes every human a potential genius. - Michael J. Gelb.",
-			"Teachers can open the door, but you must enter it yourself. - Ngạn ngữ Trung Quốc.",
-			"Education is the most powerful weapon you can use to change the world. - BB King",
-			"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do. - Pelé.",
-			"Success is the sum of small efforts, repeated day in and day out. - Robert Collier.",
-			"Your parents are waiting for your success. - mystudymotivations.",
-		];
-		var randomNumber = Math.floor(Math.random() * (quote.length));
-		var text = quote[randomNumber];
-		document.getElementById('textuwu').textContent = text;
-	}
-		function timer03() {
-			const t = Date.parse("2023-06-28T07:00:00") - Date.parse(new Date());
-			const seconds = Math.floor((t / 1000) % 60);
-			const minutes = Math.floor((t / 1000 / 60) % 60);
-			const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-			const days = Math.floor(t / (1000 * 60 * 60 * 24));
-			document.getElementById('time03').textContent = "Còn lại: " + days + " Ngày " + hours + " Giờ " + minutes + " Phút " + seconds + " Giây!";
-		}
-		var timer003 = setInterval(function () { timer03() }, 1000);
-		var rantextowo = setInterval(function () { rantextuwu() }, 5000);
-	</script>
+    <script>
+        document.getElementById('textuwu').textContent = "Chúc các sĩ tử mùa thi may mắn, thành công và tốt đẹp. Chúc các cậu thi đậu 100% trong kì thi tốt nghiệp. Hãy ăn đủ bữa, ngủ đủ giấc mới có sức để ôn thi nhé cậu:3. Học ngày, học đêm, học quên cả ngủ. Chúc cậu thi tốt, sớm mang giấy báo về nha.";
+        
+
+
+        function allquote() {
+            if (Date.parse("2023-06-30T21:30:00") - Date.parse(new Date()) > 0) {
+                var quote = [
+                    "Tri thức là sức mạnh. F.Bacon",
+                    "Cần phải lựa chọn một cách nghiêm ngặt xem nên học gì và không nên học gì. [Lev Tolstoy]",
+                    "Đọc sách không bằng suy ngẫm, Học trường không hơn được trường đời. [Immanuel Kant]",
+                    "Nghị lực và bền bỉ có thể giúp bạn chinh phục mọi thứ",
+                    "Cuộc đời sẽ tươi đẹp hơn rất nhiều nếu ta có những tình bạn đúng nghĩa, luôn hết mình vì người khác.",
+                    "Một chữ cũng là thầy, nửa chữ cũng là thầy [Tục ngữ Việt Nam]",
+                    "Vấp ngã không phải là thất bại, chỉ là dừng lại cho đỡ mỏi chân thôi!",
+                    "Giáo dục là làm cho con người tìm thấy chính mình . [Socrates]",
+                    "Ước mơ không có ngày hết hạn, hãy hít thở sâu và cố gắng thêm lần nữa.",
+                    "Cuộc sống rất ngắn. Đừng lẵng phí nó bởi những nỗi buồn. Hãy là chính mình, luôn vui vẻ, tự do, và trở thành bất cứ gì bạn muốn.",
+                    "Học, học nữa, học mãi. [V.I. Lenin]",
+                    "Phía sau tôi không có lấy một người, sao tôi dám ngã xuống.",
+                    "Trường học có thể hô biến những người thắng và người bại, nhưng cuộc sống thì không. [Bill Gate]",
+                    "Muốn xây dựng đất nước, trước hết phải phát triển giáo dục. Muốn trị nước, phải trọng dụng người tài. [Chiếu Lập Học]",
+                    "Thời gian còn lại rất ngắn. Hãy cố gắng hết sức mình, để không phải hối tiếc.",
+                    "Con đường do bản thân lựa chọn, dù có quỳ cũng phải đi cho hết.",
+                    "Thái độ bây giờ của bạn sẽ quyết định mười năm sau bạn là một nhân vật tầm cỡ hay chỉ là một kẻ thất bại.",
+                    "Nếu như không có vận may, thì hãy thử dùng dũng khí.",
+                    "Để có thể thành công, bạn cần phải tin rằng mình có thể.",
+                    "Cách tốt nhất để làm mọi thứ là ngừng nói và làm ngay bây giờ.",
+                    "Bạn chỉ thất bại khi bạn ngừng cố gắng.",
+                    "Kẻ thù lớn nhất của tri thức không phải là sự thiếu hiểu biết mà là sự ảo tưởng về tri thức. - Stephen Hawking.",
+                    "Bạn bắt đầu làm việc gì đó càng sớm thì càng sớm thấy được kết của quả của nó.",
+                    "Nếu chúng ta cứ đợi cho đến khi bản thân sẵn sàng thì có lẽ chúng ta sẽ đợi đến hết cuộc đời.",
+                    "Không bao giờ quá muộn để khiến mình trở thành phiên bản mà bản thân mong muốn.",
+                    "Bạn không cần phải tuyệt vời ngay từ khi bắt đầu. Nhưng bạn phải bắt đầu trở nên tuyệt vời.",
+                    "Không ai có thể quay ngược thời gian để bắt đầu lại từ đầu. Nhưng ai cũng có thể bắt đầu từ hôm này để tạo nên một cái kết mới. - Maria Robinson.",
+                    "Một dòng sông có thể cắt ngang qua những khối đá không phải nhờ sức mạnh mà là nhờ sự bền bỉ.",
+                    "Để thay đổi cuộc sống của mình, trước hết bạn phải thay đổi thói quen hàng ngày.",
+                    "Người ta sẽ học được nhiều điều từ những sai lầm của bản thân nếu không cố gắng phủ nhận chúng. - Harold J.Smith.",
+                    "Thiên tài chỉ có 1% là năng khiếu bẩm sinh, 99% còn lại là mồ hôi. Thiên tài chỉ đơn thuần là một người tài năng đã hoàn thành tất cả cá bài tập về nhà. - Thomas Edison.",
+                    "Muốn có kiến thức, bạn phải học. Nhưng để có được sự khôn ngoan, người ta phải học cách quan sát. - Marilyn vos Savant.",
+                    "Đọc càng nhiều, biết càng nhiều điều. Càng học được nhiều, bạn sẽ càng đi được nhiều nơi. - Dr. Seuss.",
+                    "Mọi thành tựu đề bắt đầu từ quyết định cố gắng. - Gail Devers.",
+                    "Sự trì hoãn sẽ khiến cho những điều dễ dàng trở nên khó khăn và những điều khó khăn trở nên khó khăn hơn. - Mason Cooley.",
+                    "Hãy học tập chăm chỉ, dù điều đó dường như không thể, dù điều đó tốn nhiều thời gian hay khiến bạn phải thức cả đêm. Chỉ cần nhớ rằng cảm giác thành công là điều tuyệt vời nhất trên thế giới. - khangal_wehearit.",
+                    "Chăm chỉ là điều quan trọng, nhưng có một điều còn quan trọng hơn, đó là tin tưởng vào chính mình. - Harry Potter.",
+                    "Nếu bạn không theo đuổi những gì mình muốn, bạn sẽ không bao giờ có được nó. Nếu bạn không hỏi, câu trả lời sẽ luôn là không. Nếu bạn không tiến về phía trước, bạn sẽ mãi dậm chân tại chỗ. - Nora Roberts.",
+                    "12 năm đèn sách, đừng để bản thân phải nuối tiếc.",
+                    "Trên con đường thành công, sẽ không có ai vực bạn dậy, không có ai làm thay bạn. Bạn cần phải tự kỷ luật, tự học hỏi, tự trưởng thành, tự đột phá.",
+                    "Bất luận bạn đang trải qua chuyện gì, xin đừng từ bỏ. Bởi vì sự kiên trì vĩnh viễn sẽ không khiến người ta thất vọng. Ai mà không từng trải qua khó khăn, chông gai.  Chỉ cần nỗ lực, bạn có thể trở thành một phiên bản độc nhất vô nhị..",
+                    "Nếu bạn học hành chăm chỉ, bạn sẽ gặp được một bản thân tốt hơn.",
+                    "Đừng đợi miếng bánh từ trên trời rơi xuống, cũng đừng mong ông trời bao dung với bạn. Chỉ có nỗ lực mới giúp chúng ta thấy được bầu trời cao rộng và trong xanh ở ngoài kia.",
+                    "Học một chút còn hơn là không học, làm một chút còn hơn là không làm. Không phải mọi sự nỗ lực đều dẫn đến thành công, nhưng bạn sẽ không bao giờ thành công nếu không chăm chỉ.",
+                    "Khi bạn trở nên tốt hơn thì mọi thứ xung quanh bạn cũng tốt hơn. Chăm chỉ học hành là một trong những cách có thể khiến cho bản thân trở thành một phiên bản tốt hơn.",
+                    "Những người vượt qua kỳ thi sẽ không lang thang trên mạng vào thời điểm này. - mystudymotivations.",
+                    "Nếu bạn đã làm hết khả năng thì bạn sẽ không có thời gian để lo lắng về sự thất bại. - mystudymotivations.",
+                    "Khi bạn đang lãng phí thời gian thì những người khác đều đang nỗ lực.",
+                    "Cha mẹ có thể hy sinh tất cả vì bạn. Khi mệt mỏi, hãy nghĩ đến họ và cố gắng nhiều hơn.",
+                    "Khi bạn lười biếng, người khác đang chăm chỉ. Đến khi bạn nhận ra mình phải nỗ lực nhiều hơn thì người khác đều đang bận hưởng “trái ngọt” rồi.",
+                    "Mọi người đều trở nên ưu tú, đừng để bản thân bị tụt lại phía sau.",
+                    "Đừng dừng lại cho đến khi bạn cảm thấy tự hào về bản thân. - Khuyết danh.",
+                    "Không gì có thể thay thế cho sự chăm chỉ. - Thomas Edison.",
+                    "Trí tuệ…. không đến từ tuổi tác mà đến từ giáo dục và học tập. - Anton Chekhov.",
+                    "Tương lai thuộc về những người chuẩn bị từ hôm nay.",
+                    "Hãy giỏi đến mức không ai có thể phớt lờ bạn.",
+                    "Khoảng cách giữa ước mơ và thực tế được gọi là hành động.",
+                    "Hãy tìm cầu vồng khi trời mưa và tìm những vì sao khi trời tối.",
+                    "Học từ quá khứ. Sống cho hiện tại. Hy vọng vào tương lai. - Albert Einstein.",
+                    "Học trước, chơi sau. - Daniel D. Palmer.",
+                    "Một ngày nào đó, mọi nỗ lực của bạn sẽ được đền đáp.",
+                    "Tin vào bản thân có thể là bạn đã đi được nửa chặng đường.",
+                    "Hãy tự thúc đẩy bản thân vì sẽ chẳng có ai làm điều đó cho bạn.",
+                    "Cuộc sống luôn có hai quy tắc. Một là không bao giờ bỏ cuộc. Hai là luôn luôn ghi nhớ quy tắc số một.",
+                    "Tri thức là sức mạnh.  - Kofi Annan.",
+                    "Học vì bản thân, vì tương lai và vì cả những người yêu thương bạn vô điều kiện.",
+                    "Sự trả thù tốt nhất là trở nên thành công.",
+                    "Chỉ cần cố gắng thêm một chút, một chút nữa thôi, mọi nỗ lực của bạn sẽ được đền đáp.",
+                    "Tương lai nằm trong tay, đừng khiến bản thân phải hối tiếc.",
+                    "Bầu trời đẹp đẽ ấy, hãy cùng nhau ngắm nhìn.",
+                    "Học là con đường giúp bạn thay đổi số phận.",
+                    "Không trồng cây thì sẽ không có cơ hội được nằm dưới bóng râm và thưởng thức trái ngọt. Không học hành chăm chỉ, nỗ lực hết mình ngay từ hôm nay thì cơ hội chạm đến thành công, đạt được ước mơ của bạn sẽ ít hơn người khác.",
+                    "Học không phải là con đường duy nhất dẫn đến thành công nhưng nó được xem là con đường ngắn nhất, vững chắc nhất. Ngay cả người thành công cũng phải học hỏi không ngừng.",
+                    "Công thức để thành công là: Học khi người khác đang ngủ; làm việc khi người khác lười biếng; chuẩn bị khi người khác đang chơi; và ước mơ khi người khác mong muốn. - William A. Ward.",
+                    "Bạn không cần phải trở thành học sinh hoàn hảo. Bạn chỉ cần nỗ lực hết mình.",
+                    "Đừng nói rằng bạn không có đủ thời gian. Bạn có chính xác số giờ mà Helen Keller, Pasteur, Michelangelo, mẹ Teresa, Leonardo da Vinci, Thomas Jefferson và Albert Einstein có mỗi ngày. - H. Jackson Brown Jr.",
+                    "Mỗi buổi sáng, bạn có hai lựa chọn: tiếp tục ngủ với những giấc mơ của mình hoặc thức dậy và biến chúng thành sự thật.  - Khuyết danh.",
+                    "Bài học vĩ đại nhất mà tôi học được trong cuộc đời là tôi vẫn còn có rất nhiều điều phải học.",
+                    "Bạn sẽ không bao giờ biết được bản thân có thể làm gì khi chưa cố gắng. - Robert Collier.",
+                    "Không có bí quyết nào cho sự thành công. Nó là kết quả của sự chuẩn bị, làm việc chăm chỉ và học hỏi từ thất bại. - Colin Powell.",
+                    "Thành công không tự đến với bạn, bạn phải đi tìm nó. - Marva Collins.",
+                    "Tài năng “rẻ” hơn muối ăn. Điểm khác biệt giữa người tài năng và người thành công là làm việc chăm chỉ. -  Stephen King.",
+                    "Chăm chỉ học tập trong im lặng rồi thành công sẽ lên tiếng.",
+                    "Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young. - Henry Ford.",
+                    "An investment in knowledge pays the best interest. - Benjamin Franklin",
+                    "There is no end to education. It is not that you read a book, pass an examination, and finish with education. The whole of life, from the moment you are born to the moment you die, is a process of learning. - Jiddu Krishnamurti.",
+                    "Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi.",
+                    "Research shows that you begin learning in the womb and go right on learning until the moment you pass on. Your brain has a capacity for learning that is virtually limitless, which makes every human a potential genius. - Michael J. Gelb.",
+                    "Teachers can open the door, but you must enter it yourself. - Ngạn ngữ Trung Quốc.",
+                    "Education is the most powerful weapon you can use to change the world. - BB King",
+                    "Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do. - Pelé.",
+                    "Success is the sum of small efforts, repeated day in and day out. - Robert Collier.",
+                    "Your parents are waiting for your success. - mystudymotivations.",
+                ];
+                var randomNumber = Math.floor(Math.random() * (quote.length));
+                var text = quote[randomNumber];
+                document.getElementById('textuwu').textContent = text;
+            }
+        }
+        
+        
+        function all() {
+            if (Date.parse("2023-06-28T07:35:00") - Date.parse(new Date()) > -1000) {
+                const t = Date.parse("2023-06-28T07:35:00") - Date.parse(new Date());
+                const seconds = Math.floor((t / 1000) % 60);
+                const minutes = Math.floor((t / 1000 / 60) % 60);
+                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(t / (1000 * 60 * 60 * 24));
+                document.getElementById('time03').textContent = "Còn lại: " + days + " Ngày " + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+
+            }
+        }
+
+        
+
+        function monthi01() {
+            if  (Date.parse("2023-06-28T07:35:00") - Date.parse(new Date()) < 0) {
+            if (Date.parse("2023-06-28T09:35:00") - Date.parse(new Date()) > -1000)  {
+                const t = Date.parse("2023-06-28T09:35:00") - Date.parse(new Date());
+                const seconds = Math.floor((t / 1000) % 60);
+                const minutes = Math.floor((t / 1000 / 60) % 60);
+                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(t / (1000 * 60 * 60 * 24));
+                document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ nhất (Ngữ Văn), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+            }
+        }}
+
+        function cdmonthi01() {
+            if (Date.parse("2023-06-28T09:35:00") - Date.parse(new Date()) < 0) {
+            if (Date.parse("2023-06-28T14:30:00") - Date.parse(new Date()) > -1000) {
+                const t = Date.parse("2023-06-28T14:30:00") - Date.parse(new Date());
+                const seconds = Math.floor((t / 1000) % 60);
+                const minutes = Math.floor((t / 1000 / 60) % 60);
+                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(t / (1000 * 60 * 60 * 24));
+                document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Toán) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        }}}
+
+        function monthi02() {
+            if  (Date.parse("2023-06-28T14:30:00") - Date.parse(new Date()) < 0) {
+            if (Date.parse("2023-06-28T16:00:00") - Date.parse(new Date()) > -1000)  {
+                const t = Date.parse("2023-06-28T16:00:00") - Date.parse(new Date());
+                const seconds = Math.floor((t / 1000) % 60);
+                const minutes = Math.floor((t / 1000 / 60) % 60);
+                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(t / (1000 * 60 * 60 * 24));
+                document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ hai (Toán), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+            }
+        }}
+
+
+        function cdmonthi02() {
+            if (Date.parse("2023-06-28T16:00:00") - Date.parse(new Date()) < 0) {
+            if (Date.parse("2023-06-29T07:35:00") - Date.parse(new Date()) > -1000) {
+                const t = Date.parse("2023-06-29T07:35:00") - Date.parse(new Date());
+                const seconds = Math.floor((t / 1000) % 60);
+                const minutes = Math.floor((t / 1000 / 60) % 60);
+                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(t / (1000 * 60 * 60 * 24));
+                document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Vật Lý) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        }}}
+
+
+        function monthi03() {
+            if  (Date.parse("2023-06-29T07:35:00") - Date.parse(new Date()) < 0) {
+            if (Date.parse("2023-06-29T08:25:00") - Date.parse(new Date()) > -1000)  {
+                const t = Date.parse("2023-06-29T08:25:00") - Date.parse(new Date());
+                const seconds = Math.floor((t / 1000) % 60);
+                const minutes = Math.floor((t / 1000 / 60) % 60);
+                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(t / (1000 * 60 * 60 * 24));
+                document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ ba (Vật Lý), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+            }
+        }}
+
+
+        function cdmonthi03() {
+            if (Date.parse("2023-06-29T08:25:00") - Date.parse(new Date()) < 0) {
+            if (Date.parse("2023-06-29T08:35:00") - Date.parse(new Date()) > -1000) {
+                const t = Date.parse("2023-06-29T08:35:00") - Date.parse(new Date());
+                const seconds = Math.floor((t / 1000) % 60);
+                const minutes = Math.floor((t / 1000 / 60) % 60);
+                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(t / (1000 * 60 * 60 * 24));
+                document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Hóa Học) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        }}}
+
+
+        function monthi04() {
+            if  (Date.parse("2023-06-29T08:35:00") - Date.parse(new Date()) < 0) {
+            if (Date.parse("2023-06-29T09:25:00") - Date.parse(new Date()) > -1000)  {
+                const t = Date.parse("2023-06-29T09:25:00") - Date.parse(new Date());
+                const seconds = Math.floor((t / 1000) % 60);
+                const minutes = Math.floor((t / 1000 / 60) % 60);
+                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(t / (1000 * 60 * 60 * 24));
+                document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ tư (Hóa Học), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+            }
+        }}
+
+
+
+
+        function cdmonthi04() {
+            if (Date.parse("2023-06-29T09:25:00") - Date.parse(new Date()) < 0) {
+            if (Date.parse("2023-06-29T09:35:00") - Date.parse(new Date()) > -1000) {
+                const t = Date.parse("2023-06-29T09:35:00") - Date.parse(new Date());
+                const seconds = Math.floor((t / 1000) % 60);
+                const minutes = Math.floor((t / 1000 / 60) % 60);
+                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(t / (1000 * 60 * 60 * 24));
+                document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Sinh Học) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        }}}
+
+
+        function monthi05() {
+            if  (Date.parse("2023-06-29T09:35:00") - Date.parse(new Date()) < 0) {
+            if (Date.parse("2023-06-29T10:25:00") - Date.parse(new Date()) > -1000)  {
+                const t = Date.parse("2023-06-29T10:25:00") - Date.parse(new Date());
+                const seconds = Math.floor((t / 1000) % 60);
+                const minutes = Math.floor((t / 1000 / 60) % 60);
+                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(t / (1000 * 60 * 60 * 24));
+                document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ năm (Sinh Học), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+            }
+        }}
+
+        function cdmonthi05() {
+            if (Date.parse("2023-06-29T10:25:00") - Date.parse(new Date()) < 0) {
+            if (Date.parse("2023-06-29T14:30:00") - Date.parse(new Date()) > -1000) {
+                const t = Date.parse("2023-06-29T14:30:00") - Date.parse(new Date());
+                const seconds = Math.floor((t / 1000) % 60);
+                const minutes = Math.floor((t / 1000 / 60) % 60);
+                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(t / (1000 * 60 * 60 * 24));
+                document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Tiếng Anh) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        }}}
+
+
+
+        function monthi06() {
+            if  (Date.parse("2023-06-29T14:30:00") - Date.parse(new Date()) < 0) {
+            if (Date.parse("2023-06-29T15:30:00") - Date.parse(new Date()) > -1000)  {
+                const t = Date.parse("2023-06-29T15:30:00") - Date.parse(new Date());
+                const seconds = Math.floor((t / 1000) % 60);
+                const minutes = Math.floor((t / 1000 / 60) % 60);
+                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(t / (1000 * 60 * 60 * 24));
+                document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ sáu (Tiếng Anh), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+            }
+        }}
+
+        function thixong() {
+            if  (Date.parse("2023-06-29T15:30:00") - Date.parse(new Date()) < 0) {
+                document.getElementById('time03').textContent = "Cậu đã làm bài rất tốt rùi, hãy về nhà và làm điều mình thích, đi ngủ, đi chơi hay là lên kế hoạch đi du lịch đâu đó cùng gia đình và bạn bè. Thời gian qua cậu đã cố gắng rất nhiều rùi, bây giờ hãy hết mình tận hưởng mùa hè cuối cùng trước khi bước lên giảng đường đại học nhé! Chúc cậu đạt được kết quả tốt nhất!~ - Yuki Kiriha"
+            }
+        }
+        let c = setInterval(function () { all() }, 1000);
+        let cc = setInterval(function () { allquote() }, 8000);
+        let ccc = setInterval(function () { monthi01() }, 1000);
+        let cccc = setInterval(function () { cdmonthi01() }, 1000);
+        let ccccc = setInterval(function () { monthi02() }, 1000);
+        let cccccc = setInterval(function () { cdmonthi02() }, 1000);
+        let ccccccc = setInterval(function () { monthi03() }, 1000);
+        let cccccccc = setInterval(function () { cdmonthi03() }, 1000);
+        let ccccccccc = setInterval(function () { monthi04() }, 1000);
+        let cccccccccc = setInterval(function () { cdmonthi04() }, 1000);
+        let ccccccccccc = setInterval(function () { monthi05() }, 1000);
+        let cccccccccccc = setInterval(function () { cdmonthi05() }, 1000);
+        let ccccccccccccc = setInterval(function () { monthi06() }, 1000);
+        let cccccccccccccc = setInterval(function () { thixong( )}, 1000);
+        document.querySelector("audio").setAttribute("src", `/music/thpt.mp3`);
+    </script>
 
 </body>
 
