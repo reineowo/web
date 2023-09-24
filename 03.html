@@ -107,6 +107,7 @@
                 </header>
 
                 <div id="time03"></div>
+                <p>Ngày thi: 28/06/2024 (Dự kiến)</p>
                 <div id="textuwu"></div>
                 <p></p>
                 <div id="music">
@@ -153,7 +154,7 @@
 
 
         function allquote() {
-            if (Date.parse("2023-06-30T21:30:00") - Date.parse(new Date()) > 0) {
+            if (Date.parse("2024-06-30T21:30:00") - Date.parse(new Date()) > 0) {
                 var quote = [
                     "Tri thức là sức mạnh. F.Bacon",
                     "Cần phải lựa chọn một cách nghiêm ngặt xem nên học gì và không nên học gì. [Lev Tolstoy]",
@@ -270,162 +271,162 @@
 
         
 
-        function monthi01() {
-            if  (Date.parse("2023-06-28T07:35:00") - Date.parse(new Date()) < 0) {
-            if (Date.parse("2023-06-28T09:35:00") - Date.parse(new Date()) > -1000)  {
-                const t = Date.parse("2023-06-28T09:35:00") - Date.parse(new Date());
-                const seconds = Math.floor((t / 1000) % 60);
-                const minutes = Math.floor((t / 1000 / 60) % 60);
-                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                const days = Math.floor(t / (1000 * 60 * 60 * 24));
-                document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ nhất (Ngữ Văn), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
-            }
-        }}
+        // function monthi01() {
+        //     if  (Date.parse("2023-06-28T07:35:00") - Date.parse(new Date()) < 0) {
+        //     if (Date.parse("2023-06-28T09:35:00") - Date.parse(new Date()) > -1000)  {
+        //         const t = Date.parse("2023-06-28T09:35:00") - Date.parse(new Date());
+        //         const seconds = Math.floor((t / 1000) % 60);
+        //         const minutes = Math.floor((t / 1000 / 60) % 60);
+        //         const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        //         const days = Math.floor(t / (1000 * 60 * 60 * 24));
+        //         document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ nhất (Ngữ Văn), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        //     }
+        // }}
 
-        function cdmonthi01() {
-            if (Date.parse("2023-06-28T09:35:00") - Date.parse(new Date()) < 0) {
-            if (Date.parse("2023-06-28T14:30:00") - Date.parse(new Date()) > -1000) {
-                const t = Date.parse("2023-06-28T14:30:00") - Date.parse(new Date());
-                const seconds = Math.floor((t / 1000) % 60);
-                const minutes = Math.floor((t / 1000 / 60) % 60);
-                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                const days = Math.floor(t / (1000 * 60 * 60 * 24));
-                document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Toán) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
-        }}}
+        // function cdmonthi01() {
+        //     if (Date.parse("2023-06-28T09:35:00") - Date.parse(new Date()) < 0) {
+        //     if (Date.parse("2023-06-28T14:30:00") - Date.parse(new Date()) > -1000) {
+        //         const t = Date.parse("2023-06-28T14:30:00") - Date.parse(new Date());
+        //         const seconds = Math.floor((t / 1000) % 60);
+        //         const minutes = Math.floor((t / 1000 / 60) % 60);
+        //         const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        //         const days = Math.floor(t / (1000 * 60 * 60 * 24));
+        //         document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Toán) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        // }}}
 
-        function monthi02() {
-            if  (Date.parse("2023-06-28T14:30:00") - Date.parse(new Date()) < 0) {
-            if (Date.parse("2023-06-28T16:00:00") - Date.parse(new Date()) > -1000)  {
-                const t = Date.parse("2023-06-28T16:00:00") - Date.parse(new Date());
-                const seconds = Math.floor((t / 1000) % 60);
-                const minutes = Math.floor((t / 1000 / 60) % 60);
-                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                const days = Math.floor(t / (1000 * 60 * 60 * 24));
-                document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ hai (Toán), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
-            }
-        }}
-
-
-        function cdmonthi02() {
-            if (Date.parse("2023-06-28T16:00:00") - Date.parse(new Date()) < 0) {
-            if (Date.parse("2023-06-29T07:35:00") - Date.parse(new Date()) > -1000) {
-                const t = Date.parse("2023-06-29T07:35:00") - Date.parse(new Date());
-                const seconds = Math.floor((t / 1000) % 60);
-                const minutes = Math.floor((t / 1000 / 60) % 60);
-                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                const days = Math.floor(t / (1000 * 60 * 60 * 24));
-                document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Vật Lý) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
-        }}}
+        // function monthi02() {
+        //     if  (Date.parse("2023-06-28T14:30:00") - Date.parse(new Date()) < 0) {
+        //     if (Date.parse("2023-06-28T16:00:00") - Date.parse(new Date()) > -1000)  {
+        //         const t = Date.parse("2023-06-28T16:00:00") - Date.parse(new Date());
+        //         const seconds = Math.floor((t / 1000) % 60);
+        //         const minutes = Math.floor((t / 1000 / 60) % 60);
+        //         const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        //         const days = Math.floor(t / (1000 * 60 * 60 * 24));
+        //         document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ hai (Toán), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        //     }
+        // }}
 
 
-        function monthi03() {
-            if  (Date.parse("2023-06-29T07:35:00") - Date.parse(new Date()) < 0) {
-            if (Date.parse("2023-06-29T08:25:00") - Date.parse(new Date()) > -1000)  {
-                const t = Date.parse("2023-06-29T08:25:00") - Date.parse(new Date());
-                const seconds = Math.floor((t / 1000) % 60);
-                const minutes = Math.floor((t / 1000 / 60) % 60);
-                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                const days = Math.floor(t / (1000 * 60 * 60 * 24));
-                document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ ba (Vật Lý), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
-            }
-        }}
+        // function cdmonthi02() {
+        //     if (Date.parse("2023-06-28T16:00:00") - Date.parse(new Date()) < 0) {
+        //     if (Date.parse("2023-06-29T07:35:00") - Date.parse(new Date()) > -1000) {
+        //         const t = Date.parse("2023-06-29T07:35:00") - Date.parse(new Date());
+        //         const seconds = Math.floor((t / 1000) % 60);
+        //         const minutes = Math.floor((t / 1000 / 60) % 60);
+        //         const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        //         const days = Math.floor(t / (1000 * 60 * 60 * 24));
+        //         document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Vật Lý) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        // }}}
 
 
-        function cdmonthi03() {
-            if (Date.parse("2023-06-29T08:25:00") - Date.parse(new Date()) < 0) {
-            if (Date.parse("2023-06-29T08:35:00") - Date.parse(new Date()) > -1000) {
-                const t = Date.parse("2023-06-29T08:35:00") - Date.parse(new Date());
-                const seconds = Math.floor((t / 1000) % 60);
-                const minutes = Math.floor((t / 1000 / 60) % 60);
-                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                const days = Math.floor(t / (1000 * 60 * 60 * 24));
-                document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Hóa Học) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
-        }}}
+        // function monthi03() {
+        //     if  (Date.parse("2023-06-29T07:35:00") - Date.parse(new Date()) < 0) {
+        //     if (Date.parse("2023-06-29T08:25:00") - Date.parse(new Date()) > -1000)  {
+        //         const t = Date.parse("2023-06-29T08:25:00") - Date.parse(new Date());
+        //         const seconds = Math.floor((t / 1000) % 60);
+        //         const minutes = Math.floor((t / 1000 / 60) % 60);
+        //         const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        //         const days = Math.floor(t / (1000 * 60 * 60 * 24));
+        //         document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ ba (Vật Lý), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        //     }
+        // }}
 
 
-        function monthi04() {
-            if  (Date.parse("2023-06-29T08:35:00") - Date.parse(new Date()) < 0) {
-            if (Date.parse("2023-06-29T09:25:00") - Date.parse(new Date()) > -1000)  {
-                const t = Date.parse("2023-06-29T09:25:00") - Date.parse(new Date());
-                const seconds = Math.floor((t / 1000) % 60);
-                const minutes = Math.floor((t / 1000 / 60) % 60);
-                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                const days = Math.floor(t / (1000 * 60 * 60 * 24));
-                document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ tư (Hóa Học), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
-            }
-        }}
+        // function cdmonthi03() {
+        //     if (Date.parse("2023-06-29T08:25:00") - Date.parse(new Date()) < 0) {
+        //     if (Date.parse("2023-06-29T08:35:00") - Date.parse(new Date()) > -1000) {
+        //         const t = Date.parse("2023-06-29T08:35:00") - Date.parse(new Date());
+        //         const seconds = Math.floor((t / 1000) % 60);
+        //         const minutes = Math.floor((t / 1000 / 60) % 60);
+        //         const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        //         const days = Math.floor(t / (1000 * 60 * 60 * 24));
+        //         document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Hóa Học) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        // }}}
 
 
-
-
-        function cdmonthi04() {
-            if (Date.parse("2023-06-29T09:25:00") - Date.parse(new Date()) < 0) {
-            if (Date.parse("2023-06-29T09:35:00") - Date.parse(new Date()) > -1000) {
-                const t = Date.parse("2023-06-29T09:35:00") - Date.parse(new Date());
-                const seconds = Math.floor((t / 1000) % 60);
-                const minutes = Math.floor((t / 1000 / 60) % 60);
-                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                const days = Math.floor(t / (1000 * 60 * 60 * 24));
-                document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Sinh Học) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
-        }}}
-
-
-        function monthi05() {
-            if  (Date.parse("2023-06-29T09:35:00") - Date.parse(new Date()) < 0) {
-            if (Date.parse("2023-06-29T10:25:00") - Date.parse(new Date()) > -1000)  {
-                const t = Date.parse("2023-06-29T10:25:00") - Date.parse(new Date());
-                const seconds = Math.floor((t / 1000) % 60);
-                const minutes = Math.floor((t / 1000 / 60) % 60);
-                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                const days = Math.floor(t / (1000 * 60 * 60 * 24));
-                document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ năm (Sinh Học), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
-            }
-        }}
-
-        function cdmonthi05() {
-            if (Date.parse("2023-06-29T10:25:00") - Date.parse(new Date()) < 0) {
-            if (Date.parse("2023-06-29T14:30:00") - Date.parse(new Date()) > -1000) {
-                const t = Date.parse("2023-06-29T14:30:00") - Date.parse(new Date());
-                const seconds = Math.floor((t / 1000) % 60);
-                const minutes = Math.floor((t / 1000 / 60) % 60);
-                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                const days = Math.floor(t / (1000 * 60 * 60 * 24));
-                document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Tiếng Anh) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
-        }}}
+        // function monthi04() {
+        //     if  (Date.parse("2023-06-29T08:35:00") - Date.parse(new Date()) < 0) {
+        //     if (Date.parse("2023-06-29T09:25:00") - Date.parse(new Date()) > -1000)  {
+        //         const t = Date.parse("2023-06-29T09:25:00") - Date.parse(new Date());
+        //         const seconds = Math.floor((t / 1000) % 60);
+        //         const minutes = Math.floor((t / 1000 / 60) % 60);
+        //         const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        //         const days = Math.floor(t / (1000 * 60 * 60 * 24));
+        //         document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ tư (Hóa Học), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        //     }
+        // }}
 
 
 
-        function monthi06() {
-            if  (Date.parse("2023-06-29T14:30:00") - Date.parse(new Date()) < 0) {
-            if (Date.parse("2023-06-29T15:30:00") - Date.parse(new Date()) > -1000)  {
-                const t = Date.parse("2023-06-29T15:30:00") - Date.parse(new Date());
-                const seconds = Math.floor((t / 1000) % 60);
-                const minutes = Math.floor((t / 1000 / 60) % 60);
-                const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                const days = Math.floor(t / (1000 * 60 * 60 * 24));
-                document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ sáu (Tiếng Anh), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
-            }
-        }}
 
-        function thixong() {
-            if  (Date.parse("2023-06-29T15:30:00") - Date.parse(new Date()) < 0) {
-                document.getElementById('time03').textContent = "Cậu đã làm bài rất tốt rùi, hãy về nhà và làm điều mình thích, đi ngủ, đi chơi hay là lên kế hoạch đi du lịch đâu đó cùng gia đình và bạn bè. Thời gian qua cậu đã cố gắng rất nhiều rùi, bây giờ hãy hết mình tận hưởng mùa hè cuối cùng trước khi bước lên giảng đường đại học nhé! Chúc cậu đạt được kết quả tốt nhất!~ - Yuki Kiriha"
-            }
-        }
+        // function cdmonthi04() {
+        //     if (Date.parse("2023-06-29T09:25:00") - Date.parse(new Date()) < 0) {
+        //     if (Date.parse("2023-06-29T09:35:00") - Date.parse(new Date()) > -1000) {
+        //         const t = Date.parse("2023-06-29T09:35:00") - Date.parse(new Date());
+        //         const seconds = Math.floor((t / 1000) % 60);
+        //         const minutes = Math.floor((t / 1000 / 60) % 60);
+        //         const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        //         const days = Math.floor(t / (1000 * 60 * 60 * 24));
+        //         document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Sinh Học) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        // }}}
+
+
+        // function monthi05() {
+        //     if  (Date.parse("2023-06-29T09:35:00") - Date.parse(new Date()) < 0) {
+        //     if (Date.parse("2023-06-29T10:25:00") - Date.parse(new Date()) > -1000)  {
+        //         const t = Date.parse("2023-06-29T10:25:00") - Date.parse(new Date());
+        //         const seconds = Math.floor((t / 1000) % 60);
+        //         const minutes = Math.floor((t / 1000 / 60) % 60);
+        //         const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        //         const days = Math.floor(t / (1000 * 60 * 60 * 24));
+        //         document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ năm (Sinh Học), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        //     }
+        // }}
+
+        // function cdmonthi05() {
+        //     if (Date.parse("2023-06-29T10:25:00") - Date.parse(new Date()) < 0) {
+        //     if (Date.parse("2023-06-29T14:30:00") - Date.parse(new Date()) > -1000) {
+        //         const t = Date.parse("2023-06-29T14:30:00") - Date.parse(new Date());
+        //         const seconds = Math.floor((t / 1000) % 60);
+        //         const minutes = Math.floor((t / 1000 / 60) % 60);
+        //         const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        //         const days = Math.floor(t / (1000 * 60 * 60 * 24));
+        //         document.getElementById('time03').textContent = "Thời gian còn lại cho tới môn thi tiếp theo (Tiếng Anh) là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        // }}}
+
+
+
+        // function monthi06() {
+        //     if  (Date.parse("2023-06-29T14:30:00") - Date.parse(new Date()) < 0) {
+        //     if (Date.parse("2023-06-29T15:30:00") - Date.parse(new Date()) > -1000)  {
+        //         const t = Date.parse("2023-06-29T15:30:00") - Date.parse(new Date());
+        //         const seconds = Math.floor((t / 1000) % 60);
+        //         const minutes = Math.floor((t / 1000 / 60) % 60);
+        //         const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        //         const days = Math.floor(t / (1000 * 60 * 60 * 24));
+        //         document.getElementById('time03').textContent = "Đã bắt đầu tính giờ môn thi thứ sáu (Tiếng Anh), thời gian còn lại của bài thi này là: "  + hours + " Giờ " + minutes + " Phút " + seconds + " Giây! 🍀";
+        //     }
+        // }}
+
+        // function thixong() {
+        //     if  (Date.parse("2024-06-29T15:30:00") - Date.parse(new Date()) < 0) {
+        //         document.getElementById('time03').textContent = "Cậu đã làm bài rất tốt rùi, hãy về nhà và làm điều mình thích, đi ngủ, đi chơi hay là lên kế hoạch đi du lịch đâu đó cùng gia đình và bạn bè. Thời gian qua cậu đã cố gắng rất nhiều rùi, bây giờ hãy hết mình tận hưởng mùa hè cuối cùng trước khi bước lên giảng đường đại học nhé! Chúc cậu đạt được kết quả tốt nhất!~ - Yuki Kiriha"
+        //     }
+        // }
         let c = setInterval(function () { all() }, 1000);
-        let cc = setInterval(function () { allquote() }, 8000);
-        let ccc = setInterval(function () { monthi01() }, 1000);
-        let cccc = setInterval(function () { cdmonthi01() }, 1000);
-        let ccccc = setInterval(function () { monthi02() }, 1000);
-        let cccccc = setInterval(function () { cdmonthi02() }, 1000);
-        let ccccccc = setInterval(function () { monthi03() }, 1000);
-        let cccccccc = setInterval(function () { cdmonthi03() }, 1000);
-        let ccccccccc = setInterval(function () { monthi04() }, 1000);
-        let cccccccccc = setInterval(function () { cdmonthi04() }, 1000);
-        let ccccccccccc = setInterval(function () { monthi05() }, 1000);
-        let cccccccccccc = setInterval(function () { cdmonthi05() }, 1000);
-        let ccccccccccccc = setInterval(function () { monthi06() }, 1000);
-        let cccccccccccccc = setInterval(function () { thixong( )}, 1000);
+        let cc = setInterval(function () { allquote() }, 5000);
+        // let ccc = setInterval(function () { monthi01() }, 1000);
+        // let cccc = setInterval(function () { cdmonthi01() }, 1000);
+        // let ccccc = setInterval(function () { monthi02() }, 1000);
+        // let cccccc = setInterval(function () { cdmonthi02() }, 1000);
+        // let ccccccc = setInterval(function () { monthi03() }, 1000);
+        // let cccccccc = setInterval(function () { cdmonthi03() }, 1000);
+        // let ccccccccc = setInterval(function () { monthi04() }, 1000);
+        // let cccccccccc = setInterval(function () { cdmonthi04() }, 1000);
+        // let ccccccccccc = setInterval(function () { monthi05() }, 1000);
+        // let cccccccccccc = setInterval(function () { cdmonthi05() }, 1000);
+        // let ccccccccccccc = setInterval(function () { monthi06() }, 1000);
+        // let cccccccccccccc = setInterval(function () { thixong( )}, 1000);
         document.querySelector("audio").setAttribute("src", `/music/thpt.mp3`);
     </script>
 
