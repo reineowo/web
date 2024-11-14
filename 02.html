@@ -9,6 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="shortcut icon" type="image/png" href="images/logo.jpg" />
+	<link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
 	<style>
 		/* body {
 			display: grid;
@@ -24,7 +25,7 @@
 			font-weight: lighter;
 			grid-column: span 3;
 			text-align: center;
-			color: #ec407a;
+			color: #000000;
 		}
 
 		#wrapper {
@@ -44,7 +45,7 @@
 			color: #ec407a;
 		}
 
-	
+
 
 		date,
 		time {
@@ -52,24 +53,27 @@
 		}
 
 		date {
-			font-size: 18px;
 			font-weight: lighter;
+			font-family: "Dancing Script";
+			font-size: 30px;
 			grid-column: span 3;
 			text-align: center;
-			color: #ec407a;
+			color: #fd9db4;
 		}
 
 		time {
-			font-size: 18px;
 			font-weight: lighter;
+			font-family: "Dancing Script";
+			font-size: 30px;
 			grid-column: span 3;
 			text-align: center;
-			color: #ec407a;
+			color: #fd9db4;
 		}
 
-		
+
 
 		.avt {
+
 			width: 160px;
 			height: 160px;
 			border-radius: 50%;
@@ -78,22 +82,52 @@
 
 		#info {
 			margin-top: 2.6rem;
+			gap: 100px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			/* Center align horizontally */
+			align-items: center;
+			/* Center align vertically */
+			text-align: center;
+
+		}
+
+		#textuwu {
+			font-weight: lighter;
+			font-family: "Dancing Script";
+			font-size: 25px;
+			grid-column: span 3;
+			text-align: center;
+			color: #fd9db4;
+		}
+
+		#dbn {
+			font-weight: lighter;
+			font-family: "Dancing Script";
+			font-size: 40px;
+			grid-column: span 3;
+			text-align: center;
+			color: #fd9db4;
 		}
 
 		#current-time {
-			font-size: 18px;
 			font-weight: lighter;
+			font-family: "Dancing Script";
+			font-size: 20px;
 			grid-column: span 3;
 			text-align: center;
-			color: #ec407a;
+			color: #fd9db4;
 		}
 
 		#heart {
+			font-weight: lighter;
+			font-family: "Dancing Script";
+			color: #fd9db4;
 			grid-column: span 2;
 			display: grid;
 			grid-template-rows: 2;
 			font-size: 44px;
-			color: #ec407a;
 			align-self: center;
 			padding-bottom: 2.6rem;
 			text-align: center;
@@ -120,7 +154,11 @@
 			font-size: 1.6rem;
 			font-weight: lighter;
 			margin-top: 1.2rem;
+			font-weight: lighter;
+			font-family: "Dancing Script";
+			color: #fd9db4;
 		}
+
 
 		#music {
 			grid-column: 2;
@@ -130,9 +168,9 @@
 			text-align: center;
 		}
 
-		
 
-		@media (max-width: 992px) {
+
+		@media (max-width: 720px) {
 			#wrapper {
 				grid-column: span 12;
 			}
@@ -168,16 +206,16 @@
 
 <body class="single is-preload">
 
-	
+
 	<div id="wrapper">
 
-	
+
 		<header id="header">
 			<h1><a href="index.html">Reine OwO!~</a></h1>
 			<nav class="links">
 				<ul>
 					<li><a href="#">API Hololive (Comming Soon)</a></li>
-					
+
 				</ul>
 			</nav>
 			<nav class="main">
@@ -195,17 +233,17 @@
 			</nav>
 		</header>
 
-	
+
 		<section id="menu">
 
-		
+
 			<section>
 				<form class="search" method="get" action="#">
 					<input type="text" name="query" placeholder="Search" />
 				</form>
 			</section>
 
-			
+
 			<section>
 				<ul class="links">
 					<li>
@@ -221,14 +259,14 @@
 							</p>
 						</a>
 					</li>
-					
+
 				</ul>
 			</section>
 
-		
+
 		</section>
 
-		
+
 		<div id="main">
 
 			<article class="post">
@@ -244,7 +282,7 @@
 					</div>
 				</header>
 				<div id="wrapper">
-					<h1>ĐÃ BÊN NHAU ĐƯỢC</h1>
+					<div id="dbn"></div>
 
 					<div id="clock-box">
 						<div id="clock">
@@ -256,15 +294,15 @@
 
 					<div id="info">
 						<div class="one">
-							<img src="images/main.jpg" class="avt">
-							<p>Yuu</p>
+							<img src="images/main.jpeg" class="avt">
+							<p>Lê Đức Thuận</p>
 						</div>
 						<div id="heart">
 							❤<anni>...</anni>
 						</div>
 						<div class="two">
-							<img src="images/main2.jpg" class="avt">
-							<p>???????
+							<img src="images/main2.jpeg" class="avt">
+							<p>Trần Nguyễn Bảo Ngọc
 
 							</p>
 						</div>
@@ -273,12 +311,15 @@
 					<div id="music">
 						<audio loop autoplay controls>Your browser does not support the audio element.</audio>
 					</div>
-					<footer>Hiii, luv u so much 💕</footer>
+					<footer>Hiii, luv u so much 💕 <br> Quote: <br>
+
+					</footer>
+					<div id="textuwu"></div>
 				</div>
 
-				<span class="image featured"><img src="images/002.jpg" style="width:100%;" alt="" /></span>
+				<span class="image featured"><img src="images/NakTel2-min.png" style="width:100%;" alt="" /></span>
 				<footer>
-					
+
 				</footer>
 			</article>
 
@@ -304,14 +345,14 @@
 
 	</div>
 
-	
+
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script>
-		const t = Date.parse(new Date()) - Date.parse("2018-04-23T23:20:00");
+		const t = Date.parse(new Date()) - Date.parse("2023-10-15T19:00:00");
 		const seconds = Math.floor((t / 1000) % 60);
 		const minutes = Math.floor((t / 1000 / 60) % 60);
 		const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
@@ -320,10 +361,54 @@
 			music = ['tinhyeumauhong', 'anhtheday', 'anhsedonem', 'yeutrongnangmai', 'emkhacgihoa', 'nucuoiem', 'tinhca', 'anhdalacvao', 'emlahoanghon'];
 
 		document.addEventListener('DOMContentLoaded', function () {
+			document.getElementById('textuwu').textContent = "Tình yêu là sự đồng điệu lạ kì của hai trái tim, như hòa chung một nhịp, là chia sẻ, là gắn kết, là xem ai đó như cả thế giới, là muốn bên ai đó một đời.";
+			document.getElementById('dbn').textContent = "ĐÃ BÊN NHAU ĐƯỢC"
+			function quote() {
+				var quote = [
+					"Hạnh phúc… không phải là được nhiều người yêu. Mà là được được một người yêu rất nhiều.",
+					"Trên đời không có gì ngọt ngào bằng giấc mộng yêu đương thời xuân trẻ.",
+					"Chỉ mất 3 giây để nói lời yêu, nhưng phải mất cả cuộc đời để chứng minh điều đó.",
+					"Tình yêu, vốn là một thứ tình cảm muôn hình vạn trạng. Chưa từng bị bỏ rơi, chưa từng bị tổn thương, liệu có thể hiểu được người yêu không? Tình yêu, vốn là một sự trải nghiệm, nhưng mong ước bền lâu.",
+					"Tình yêu lớn không phải yêu nhiều người mà là yêu một người và suốt đời.",
+					"Đôi khi, chỉ là khoảng trống của một người để lại mà cho dù có cả thế giới vẫn không thể lấp đầy.",
+					"Buông tay một người mà mình yêu thương nhất là điều khó nhất, nhưng hạnh phúc đã muốn bay thì đôi tay làm sao mà giữ nổi, càng nắm chặt càng đau.",
+					"Hạnh phúc giống như bong bóng xà phòng. Nó thật đẹp nhưng cũng thật mong manh, dễ vỡ.",
+					"Tình yêu biến những điều vô nghĩa của cuộc đời thành những gì có ý nghĩa, làm cho những bất hạnh trở thành hạnh phúc.",
+					"Tình yêu là sự hy sinh, bởi chỉ có khi yêu, con người mới dám hy sinh vì nhau, hy sinh thời gian, công sức, mà có khi là cả một đời cho nhau.",
+					"Nhớ một người là cách trái tim nhắc nhở rằng bạn đang yêu người ấy.",
+					"Em à, anh đã bị cảm nắng và bệnh đã rất nặng rồi. Liều thuốc duy nhất có thể cứu anh bây giờ là được nhìn thấy ánh mắt, nụ cười hoặc chỉ cần một tình yêu nhỏ em dành cho anh.",
+					"Trong yêu đương cũng như ở trong giấc mộng, không có gì gọi là không thể được.",
+					"Tình yêu của em là định mệnh cuộc đời anh.",
+					"Cả thế giới vội vàng lướt qua em như gió, trong mắt em duy chỉ có hình bóng anh đọng lại.",
+					"Cái gọi là duyên phận, chính là trong ngàn vạn người gặp được người cần gặp là anh, trong ngàn vạn năm, giữa mênh mông hoang hoải vô tận của thời gian, không sớm một bước cũng không muộn một bước.",
+					"Tình yêu là trạng thái mà khi đó hạnh phúc của một người khác trở nên cực kỳ quan trọng đối với hạnh phúc của bạn.",
+					"Anh biết, anh chỉ là anh, em cũng chỉ là em thôi nhưng chúng ta chắc chắn sẽ là của nhau.",
+					"Tình yêu là một phần tạo nên linh hồn. Yêu có cùng bản chất với linh hồn. Giống như linh hồn, yêu cũng là hỏa tinh của thần; giống như linh hồn, yêu không bị ăn mòn, không thể chia tách, không hề khô héo.",
+					"Có những chuyện không phải cứ cố gắng là được. Chẳng hạn như yêu thương một người và mong rằng nơi trái tim họ cũng có một chỗ thật ấm áp dành cho mình.",
+					"Yêu chính là muốn ở bên một người, không muốn xa người đó dù chỉ là một giây.",
+					"Yêu một người là nghĩ về người đó cuối cùng trước khi đi ngủ và nhớ về người đó đầu tiên khi tỉnh dậy.",
+					"Vị ngọt của tình yêu có thể bù đắp hết thảy những cay đắng trong cuộc sống.",
+					"Thà rằng cô đơn vì không yêu ai cả…còn hơn yêu ai đó mà vẫn cô đơn.",
+					"Vì mây không vội vã nên trời xanh một màu, vì em không vội vã nên mình kịp gặp nhau.",
+					"Em không thể hứa thích anh cả đời nhưng em cam đoan rằng sẽ thích anh bằng cả thanh xuân.",
+					"Anh đòi ngồi cạnh cửa sổ không phải để chọc tức em mà là muốn dùng bản thân để che bớt đi ánh nắng chói chang đang chạm vào khuôn mặt em.",
+					"Yêu chính là luôn muốn ở bên một người và không muốn rời ra người yêu dù chỉ là một giây.",
+					"Vì yêu thương vẫn ở đây nên anh sẽ mãi là nhà chờ em về với tình yêu ấy.",
+					"Trở thành cô dâu đẹp nhất là ước mơ của mọi cô gái còn biến anh thành cô dâu hạnh phúc nhất là mơ ước của đời anh.",
+					"Hạnh phúc đơn giản là tìm đúng người để trao yêu thương, tin tưởng và cùng nhau đi tới cuối con đường đời.",
+					"Quá khứ của em anh chưa từng được tham dự nhưng tương lai sánh bước bên em anh nhất định sẽ tham gia.",
+					"Đàn ông muốn trở thành mối tình đầu của phụ nữ và phụ nữ muốn trở thành mối tình cuối cùng của đàn ông.",
+					"Giữa 7 tỷ người trên Trái Đất, anh lại gặp được em và gọi đó là định mệnh.",
+					"Mình cùng nhau trải qua những ngày hạnh phúc, khổ đau và chỉ mong kết thúc là tháng ngày an yên bên nhau.",
+					"Yêu không chỉ là một danh từ – nó là một động từ; nó không chỉ là cảm xúc – nó là quan tâm, chia sẻ, giúp đỡ, hy sinh.",
+					"Tình yêu có khả năng giáo dục mạnh mẽ. Nó làm cho con người trở nên trong sáng hơn, chân thành hơn, thẳng thắn hơn, có yêu cầu xa hơn và nghiêm khắc hơn trong việc tuân thủ những tiêu chuẩn đạo đức của cuộc sống."
+				];
+				var randomNumber = Math.floor(Math.random() * (quote.length));
+				var text = quote[randomNumber];
+				document.getElementById('textuwu').textContent = text;
+			}
 
-
-
-			document.querySelector("anni").textContent = "??/??/20??";
+			document.querySelector("anni").textContent = "15/10/2023";
 			document.querySelector("date").textContent = days + " NGÀY";
 			function bruh() {
 				const t = Date.parse(new Date()) - Date.parse("2020-03-07T18:28:00");
@@ -334,6 +419,7 @@
 				document.getElementById('current-time').textContent = hours + " GIỜ " + minutes + " PHÚT " + seconds + " GIÂY";
 			}
 			var ccdcm = setInterval(function () { bruh() }, 1000)
+			var ccdcmm = setInterval(function () { quote() }, 5000)
 
 			document.querySelector("audio").setAttribute("src", `/music/${music[Math.floor(Math.random() * music.length)]}.mp3`);
 
